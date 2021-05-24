@@ -4,6 +4,16 @@ import _ from 'lodash';
 import {Link, withPrefix, classNames} from '../utils';
 import Icon from './Icon';
 
+class TitleLine extends Component {
+  render() {
+    return (
+        for (const [key, value] of Object.entries(props.title-lines)) {
+            console.log(key, value);
+        }
+}    );
+  }
+}
+
 class AnimatedTitle extends Component {
   render() {
     return (
