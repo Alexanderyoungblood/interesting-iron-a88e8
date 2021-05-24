@@ -12,14 +12,6 @@ class AnimatedTitle extends Component {
   }
 }
 
-class AnimatedTitle extends Component {
-  render() {
-    return (
-      <MDXProvider components={this.shortcodes}>{this.props.children}</MDXProvider>
-    );
-  }
-}
-
 export default class Header extends React.Component {
     render() {
         return (
