@@ -7,7 +7,7 @@ import Icon from './Icon';
 class TitleLine extends Component {
   render() {
     return (
-        Object.entries(props.title-lines)) {
+        Object.entries(props.title-lines).map(([key, value]) =>  {
             console.log(key, value);
         }
 }    );
