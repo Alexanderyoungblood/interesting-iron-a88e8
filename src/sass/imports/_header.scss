@@ -60,6 +60,10 @@
 }
 
 .site-title {
+  --Down-d: 0s;
+  --Down-t: 10s;
+  --Right-d: 0s;
+  --Right-t: 10s;
   color: _palette(secondary);
   font-size: 1.11111rem;
   font-weight: bold;
