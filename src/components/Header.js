@@ -7,8 +7,9 @@ import Icon from './Icon';
 class AnimatedTitle extends Component {
   render() {
     return (
-      <MDXProvider components={this.shortcodes}>{this.props.children}</MDXProvider>
-    );
+        for (const [key, value] of Object.entries(object)) {
+        console.log(key, value);
+}    );
   }
 }
 
