@@ -1,4 +1,4 @@
-import React from 'react';
+import React { Component } from 'react';
 import _ from 'lodash';
 
 import {Link, withPrefix, classNames} from '../utils';
