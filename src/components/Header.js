@@ -5,18 +5,11 @@ import {Link, withPrefix, classNames} from '../utils';
 import Icon from './Icon';
 
 class AnimatedTitle extends Component {
-
-  constructor() {
-    super();
-    this.shortcodes = { Header, Footer };
-  }
-
   render() {
     return (
       <MDXProvider components={this.shortcodes}>{this.props.children}</MDXProvider>
     );
   }
-
 }
 
 export default class Header extends React.Component {
