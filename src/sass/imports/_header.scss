@@ -71,6 +71,21 @@
     color: inherit;
   }
 
+
+}
+
+.site-title {
+  color: _palette(secondary);
+  font-size: 1.11111rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+
+  a {
+    border: 0;
+    color: inherit;
+  }
+
   
 }
 
