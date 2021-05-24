@@ -7,7 +7,7 @@ import Icon from './Icon';
 class AnimatedTitle extends Component {
   render() {
     return (
-        for (const [key, value] of Object.entries(object)) {
+        for (const [key, value] of Object.entries(props.)) {
             console.log(key, value);
         }
 }    );
