@@ -1,28 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import _ from 'lodash';
 
 import {Link, withPrefix, classNames} from '../utils';
 import Icon from './Icon';
-
-class TitleLine extends Component {
-  render() {
-    return (
-        Object.entries(props.title-lines).map(([key, value]) =>  {
-            console.log(key, value);
-        }
-}    );
-  }
-}
-
-class AnimatedTitle extends Component {
-  render() {
-    return (
-        for (const [key, value] of Object.entries(props.title-lines)) {
-            console.log(key, value);
-        }
-}    );
-  }
-}
 
 export default class Header extends React.Component {
     render() {
