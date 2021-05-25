@@ -49,7 +49,7 @@
 
   .avatar {
     border: 2px solid _palette(accent);
-    box-shadow: 0 0 1px 7px rgba(_palette(accent),.2);
+    box-shadow: 0 0 1px 7px rgba(_palette(accent), 0.2);
     border-radius: 100%;
     display: block;
     -o-object-fit: cover;
@@ -60,10 +60,6 @@
 }
 
 .site-title {
-  --Down-d: 0s;
-  --Down-t: 10s;
-  --Right-d: 0s;
-  --Right-t: 10s;
   color: _palette(secondary);
   font-size: 1.11111rem;
   font-weight: bold;
@@ -74,23 +70,74 @@
     border: 0;
     color: inherit;
   }
-
-
 }
 
 .site-animated-title {
   color: _palette(secondary);
-  font-size: 1.11111rem;
-  font-weight: bold;
-  line-height: 1;
-  margin: 0;
+  align-items: center;
+  justify-content: left;
+  font-size: 2rem;
+  margin: 0rem 0rem 6rem 0rem;
+  $line-count: 3;
+  $down-time: 0.5s;
+  $right-time: 0.5s;
+  letter-spacing: 1px;
+  color: #fff;
+  display: inline-flex;
 
-  a {
-    border: 0;
-    color: inherit;
+  @mixin translateXY($name, $fromXY, $toXY) {
+    @keyframes #{$name} {
+      0% {
+        transform: translate(nth($fromXY, 1), nth($fromXY, 2));
+      }
+      100% {
+        transform: translate(nth($toXY, 1), nth($toXY, 2));
+      }
+    }
   }
 
-  
+  .line {
+    line-height: 1.6rem;
+    font-weight: bold;
+    display: inline-flex;
+    @for $i from 1 through $line-count {
+      &:nth-child(#{$i}) {
+        @if $i > 1 {
+          @include translateXY(
+            slideDown-#{$i},
+            (0%, 0%),
+            (0%, 100% * ($i - 1))
+          );
+          animation: slideDown-#{$i}
+            #{$down-time}
+            cubic-bezier(1, 0.01, 0.34, 1.02)
+            0s
+            1
+            normal
+            forwards;
+        }
+      }
+    }
+  }
+
+  .hidden {
+    width: 0px;
+    span {
+      display: inline-block;
+      overflow: hidden;
+      span {
+        font-weight: normal;
+        display: inline-block;
+        @include translateXY(slideRight, (-100%, 0%), (0%, 0%));
+        animation: slideRight #{$right-time} cubic-bezier(
+            0.26,
+            0.71,
+            0.37,
+            1.01
+          ) #{$down-time} 1 normal forwards;
+      }
+    }
+  }
 }
 
 .site-description {
@@ -112,8 +159,8 @@
   position: absolute;
   right: -100%;
   top: 0;
-  -webkit-transition: right .3s, visibility 0s .3s;
-  transition: right .3s, visibility 0s .3s;
+  -webkit-transition: right 0.3s, visibility 0s 0.3s;
+  transition: right 0.3s, visibility 0s 0.3s;
   visibility: hidden;
   width: 100%;
   z-index: 90;
@@ -171,7 +218,7 @@
     &:not(.button) {
       border: 0;
       color: inherit;
-  
+
       &:hover {
         color: _palette(accent);
       }
@@ -210,13 +257,13 @@
       height: 2em;
       line-height: 2em;
       width: 2em;
-  
+
       &:hover,
       &:focus,
       &:active {
         background: _palette(accent);
         border-color: _palette(accent);
-        box-shadow: 0 0 1px 5px rgba(_palette(accent),.2);
+        box-shadow: 0 0 1px 5px rgba(_palette(accent), 0.2);
         color: #fff;
       }
     }
@@ -305,7 +352,7 @@
 
     .avatar {
       border-width: 3px;
-      box-shadow: 0 0 1px 11px rgba(_palette(accent),.2);
+      box-shadow: 0 0 1px 11px rgba(_palette(accent), 0.2);
       object-fit: cover;
       height: 100px;
       width: 100px;
@@ -373,8 +420,8 @@
     }
     .site-navigation {
       right: 0;
-      -webkit-transition: right .3s ease-in-out;
-      transition: right .3s ease-in-out;
+      -webkit-transition: right 0.3s ease-in-out;
+      transition: right 0.3s ease-in-out;
       visibility: visible;
     }
   }

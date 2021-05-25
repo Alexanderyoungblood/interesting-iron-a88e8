@@ -1,28 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import _ from 'lodash';
 
 import {Link, withPrefix, classNames} from '../utils';
 import Icon from './Icon';
-
-class TitleLine extends Component {
-  render() {
-    return (
-        Object.entries(props.title-lines).map(([key, value]) =>  {
-            console.log(key, value);
-        }
-}    );
-  }
-}
-
-class AnimatedTitle extends Component {
-  render() {
-    return (
-        for (const [key, value] of Object.entries(props.title-lines)) {
-            console.log(key, value);
-        }
-}    );
-  }
-}
 
 export default class Header extends React.Component {
     render() {
@@ -31,17 +11,14 @@ export default class Header extends React.Component {
               <div className="site-header-wrap">
                 <div className="site-header-inside">
                   <div className="site-branding">
-                    {_.get(this.props, 'pageContext.site.siteMetadata.header.profile_img', null) && (
-                    <p className="profile">
-                      <Link to={withPrefix('/')}><img src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.profile_img', null))}
-                          className="avatar" alt={_.get(this.props, 'pageContext.site.siteMetadata.header.profile_img_alt', null)} /></Link>
-                    </p>
-                    )}
-                    <div className="site-identity">
-                      <p className="site-title"><Link to={withPrefix('/')}>{_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}</Link></p>
-                      {_.get(this.props, 'pageContext.site.siteMetadata.header.tagline', null) && (
-                      <p className="site-description">{_.get(this.props, 'pageContext.site.siteMetadata.header.tagline', null)}</p>
-                      )}
+                    <div class="site-animated-title">
+                        {_.map(_.get(this.props, 'pageContext.site.siteMetadata.header.animated_title', null), (line, line_idx) => {
+                            return (
+                                <span key={line_idx} class="line">
+                                    {_.get(line, "shown", null)}<span class="hidden"><span><span>{_.get(line, "hidden", null)}</span></span></span>
+                                </span>
+                            )
+                        })}
                     </div>
                     {(_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) || _.get(this.props, 'pageContext.site.siteMetadata.header.has_social', null)) && (
                     <button id="menu-toggle" className="menu-toggle"><span className="screen-reader-text">Menu</span><span className="icon-menu"

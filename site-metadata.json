@@ -4,6 +4,20 @@
     "header": {
         "title": "AJYoungb",
         "tagline": "Header Tagline",
+        "animated_title": [
+            {
+                "shown": "A",
+                "hidden": "lexander"
+            },
+            {
+                "shown": "J",
+                "hidden": "ohn"
+            },
+            {
+                "shown": "Youngb",
+                "hidden": "lood"
+            }
+        ],
         "profile_img": "images/avatar.png",
         "profile_img_alt": "Author avatar",
         "background": "dark",
