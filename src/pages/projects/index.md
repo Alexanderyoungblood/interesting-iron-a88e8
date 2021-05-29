@@ -2,7 +2,7 @@
 title: Projects
 seo:
   title: Projects
-  description: This is the blog page
+  description: This is the projects page
   extra:
     - name: 'og:type'
       value: website
