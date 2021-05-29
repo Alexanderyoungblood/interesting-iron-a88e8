@@ -16,7 +16,8 @@
             },
             {
                 "url": "/blog/",
-                "style": "link"
+                "style": "link",
+                "label": "ps"
             },
             {
                 "label": "Style Guide",
