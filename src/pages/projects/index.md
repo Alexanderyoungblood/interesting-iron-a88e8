@@ -1,7 +1,7 @@
 ---
-title: Blog
+title: Projects
 seo:
-  title: Blog
+  title: Projects
   description: This is the blog page
   extra:
     - name: 'og:type'
