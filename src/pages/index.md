@@ -4,7 +4,7 @@ hide_title: true
 sections:
   - section_id: hero
     type: section_hero
-    title: 'Hi, I''m Alex Youngblood.'
+    title: 'Hi, I''m Alex!'
     content: >
       I'm a recent NC State grad with experience in IoT and DevOps practices. My
       other interests include CNC woodworking, and home automation involving
