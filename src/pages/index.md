@@ -23,17 +23,13 @@ sections:
   - title: sKILLS & eXPERIENCE
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
-    content: >-
-      ## Lorem ipsum
-
-
-      Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-      - Lorem ipsum
-
-      - dolor sit amet
+    content: >
+      I draw experience from my past employment at Oracle where I was a member
+      of their Infrastructure as a Service team, the projects which my teammates
+      and I carried out as part of our undergraduate curriculum, as well as the
+      personal projects I've pursued and still maintain. Below are some skills
+      that I've gained along the way. Feel free to hover over any of them to see
+      how they relate to my experience.
     actions: []
     type: section_content
   - section_id: recent-posts
