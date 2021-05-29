@@ -11,7 +11,6 @@ sections:
       computer vision. This is my website...
   - section_id: about
     type: section_content
-    title: oBJECTIVE
     content: >
       I'm currently interested in opportunities at organizations doing work with
       microservices platforms, IoT and integrated systems, or some combination
