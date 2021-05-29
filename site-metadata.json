@@ -16,7 +16,7 @@
             },
             {
                 "label": "About",
-                "url": "#",
+                "url": "/about/",
                 "style": "link",
                 "icon_class": "dev",
                 "new_window": false,
