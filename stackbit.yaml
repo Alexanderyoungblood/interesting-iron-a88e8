@@ -332,8 +332,8 @@ models:
         description: The image shown in the projects section.
       - type: string
         name: thumb_img_alt
-        label: Image alt text (blog feed)
-        description: The alt text of the blog feed image.
+        label: Image alt text (projects section)
+        description: The alt text of the projects section image.
       - type: image
         name: content_img_path
         label: Image (single post)
