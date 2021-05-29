@@ -8,7 +8,7 @@ sections:
     content: >
       I'm a recent NC State grad with experience in IoT and DevOps practices. My
       other interests include CNC woodworking, and home automation involving
-      computer vision. This is my website!
+      computer vision. This is my website...
   - section_id: about
     type: section_content
     title: About
