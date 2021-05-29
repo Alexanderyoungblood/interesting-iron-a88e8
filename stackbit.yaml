@@ -263,7 +263,7 @@ models:
           - stackbit_page_meta
   projects:
     type: page
-    urlPath: /projects/
+    urlPath: /projects
     label: Projects
     layout: projects
     file: projects/index.md
