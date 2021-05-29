@@ -22,9 +22,9 @@ seo:
     - name: 'twitter:title'
       value: Projects
     - name: 'twitter:description'
-      value: This is the Projects page
+      value: This is the projects page
     - name: 'twitter:image'
       value: images/1.jpg
       relativeUrl: true
-template: blog
+template: Projects
 ---
