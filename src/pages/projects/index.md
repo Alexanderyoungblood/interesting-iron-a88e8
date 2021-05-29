@@ -11,7 +11,7 @@ seo:
       value: Projects
       keyName: property
     - name: 'og:description'
-      value: This is the Projects page
+      value: This is the projects page
       keyName: property
     - name: 'og:image'
       value: images/1.jpg
@@ -22,7 +22,7 @@ seo:
     - name: 'twitter:title'
       value: Projects
     - name: 'twitter:description'
-      value: This is the blog page
+      value: This is the Projects page
     - name: 'twitter:image'
       value: images/1.jpg
       relativeUrl: true
