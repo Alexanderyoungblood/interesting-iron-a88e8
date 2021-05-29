@@ -263,8 +263,8 @@ models:
           - stackbit_page_meta
   projects:
     type: page
-    urlPath: /blog
-    label: Blog
+    urlPath: /projects
+    label: Projects
     layout: blog
     file: blog/index.md
     hideContent: true
