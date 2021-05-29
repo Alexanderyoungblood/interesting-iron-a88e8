@@ -25,7 +25,7 @@ sections:
       - label: Contact Me
         url: /contact
         style: button
-  - title: lorem-ipsum
+  - title: sKILLS & eXPERIENCE
     section_id: lorem-ipsum
     image_alt: lorem-ipsum
     content: >-
