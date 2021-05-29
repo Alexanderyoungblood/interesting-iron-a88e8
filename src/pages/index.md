@@ -12,11 +12,15 @@ sections:
   - section_id: about
     type: section_content
     title: About
-    content: >-
-      This is the "about" excerpt. It can be used to provide a paragraph about
-      yourself that people can read on the homepage to get a sense of who you
-      are. There also exists a dedicated about page where you can write more
-      about yourself for those who are interested.
+    content: >
+      I'm currently interested in opportunities at organizations doing work with
+      microservices platforms, IoT and integrated systems, or some combination
+      of the two. I draw experience from my past employment at Oracle where I
+      was a member of their Infrastructure as a Service team, the projects which
+      my teammates and I carried out as part of our undergraduate curriculum, as
+      well as the personal projects I've pursued and still maintain. Below are
+      some skills that I've gained along the way. Feel free to hover over any of
+      them to see how they relate to my experience.
     actions:
       - label: Contact Me
         url: /contact
