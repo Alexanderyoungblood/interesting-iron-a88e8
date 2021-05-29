@@ -265,7 +265,7 @@ models:
     type: page
     urlPath: /projects
     label: Projects
-    layout: blog
+    layout: projects
     file: projects/index.md
     hideContent: true
     singleInstance: true
