@@ -5,9 +5,10 @@ sections:
   - section_id: hero
     type: section_hero
     title: 'Hi, I''m Alex Youngblood.'
-    content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
+    content: >
+      I'm a recent NC State grad with experience in IoT and DevOps practices. My
+      other interests include CNC woodworking, and home automation involving
+      computer vision. This is my website!
   - section_id: about
     type: section_content
     title: About
