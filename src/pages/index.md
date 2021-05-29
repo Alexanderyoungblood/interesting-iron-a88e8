@@ -37,8 +37,8 @@ sections:
     title: Recent Posts
     posts_number: 4
     actions:
-      - label: View Blog
-        url: blog/index.html
+      - label: View Projects
+        url: projects/index.html
         style: button
   - title: lorem-ipsum
     section_id: lorem-ipsum
