@@ -261,7 +261,7 @@ models:
         name: seo
         models:
           - stackbit_page_meta
-  blog:
+  projects:
     type: page
     urlPath: /blog
     label: Blog
