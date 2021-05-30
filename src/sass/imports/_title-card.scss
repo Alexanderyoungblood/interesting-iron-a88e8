@@ -1,0 +1,31 @@
+.site-title-card {
+  letter-spacing: 1px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 3.33333em;
+  font-size: 1em;
+  width: 100%;
+  // border-color: #111;
+  // border-style: solid;
+
+  .line {
+    font-weight: bold;
+    display: flex;
+    height: 1em;
+    // border-color: #111;
+    // border-style: solid;
+  }
+
+  .hidden {
+    opacity: 0;
+    // border-color: #111;
+    // border-style: solid;
+  }
+
+  .reveal {
+    font-weight: normal;
+    display: inline-block;
+    // border-color: #111;
+    // border-style: solid;
+  }
+}

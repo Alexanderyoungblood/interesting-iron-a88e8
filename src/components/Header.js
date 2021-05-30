@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import {Link, withPrefix, classNames} from '../utils';
 import Icon from './Icon';
+import TitleCard from './TitleCard';
 
 export default class Header extends React.Component {
     render() {
@@ -11,18 +12,7 @@ export default class Header extends React.Component {
               <div className="site-header-wrap">
                 <div className="site-header-inside">
                   <div className="site-branding">
-                    <div class="site-animated-title">
-                        {
-                        _.map(_.get(this.props, 'pageContext.site.siteMetadata.header.animated_title', null), (line, line_idx) => {
-                            return (
-                                <span key={line_idx} class="line">
-                                    {_.get(line, "shown", null)}<span class="hidden"><span><span>{_.get(line, "hidden", null)}</span></span></span>
-                                </span>
-                            )
-
-                        })
-                        }
-                    </div>
+                    {<TitleCard {...this.props} />}
                     {(_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) || _.get(this.props, 'pageContext.site.siteMetadata.header.has_social', null)) && (
                     <button id="menu-toggle" className="menu-toggle"><span className="screen-reader-text">Menu</span><span className="icon-menu"
                         aria-hidden="true" /></button>
