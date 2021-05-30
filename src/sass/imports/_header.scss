@@ -60,10 +60,6 @@
 }
 
 .site-title {
-  --Down-d: 0s;
-  --Down-t: 10s;
-  --Right-d: 0s;
-  --Right-t: 10s;
   color: _palette(secondary);
   font-size: 1.11111rem;
   font-weight: bold;
@@ -297,7 +293,7 @@
   }
 
   .profile {
-    margin: 0 0 2em;
+    margin: 0 0 1em;
 
     .avatar {
       border-width: 3px;

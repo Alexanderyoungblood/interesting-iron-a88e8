@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import {Link, withPrefix, classNames} from '../utils';
 import Icon from './Icon';
+import TitleCard from './TitleCard';
 
 export default class Header extends React.Component {
     render() {
@@ -17,11 +18,12 @@ export default class Header extends React.Component {
                           className="avatar" alt={_.get(this.props, 'pageContext.site.siteMetadata.header.profile_img_alt', null)} /></Link>
                     </p>
                     )}
+                    <TitleCard {...this.props} />
                     <div className="site-identity">
-                      <p className="site-title"><Link to={withPrefix('/')}>{_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}</Link></p>
-                      {_.get(this.props, 'pageContext.site.siteMetadata.header.tagline', null) && (
+                      {/* <p className="site-title"><Link to={withPrefix('/')}>{_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}</Link></p> */}
+                      {/* {_.get(this.props, 'pageContext.site.siteMetadata.header.tagline', null) && (
                       <p className="site-description">{_.get(this.props, 'pageContext.site.siteMetadata.header.tagline', null)}</p>
-                      )}
+                      )} */}
                     </div>
                     {(_.get(this.props, 'pageContext.site.siteMetadata.header.has_nav', null) || _.get(this.props, 'pageContext.site.siteMetadata.header.has_social', null)) && (
                     <button id="menu-toggle" className="menu-toggle"><span className="screen-reader-text">Menu</span><span className="icon-menu"
