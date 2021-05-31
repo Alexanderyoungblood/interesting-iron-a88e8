@@ -1,3 +1,6 @@
+@import "imports/functions";
+@import "imports/mixins";
+
 // Font.
 $font: (
   primary: (
@@ -14,21 +17,33 @@ $font: (
   ),
 );
 
-// Palette.
-$palette: (
-  primary: #555e69,
-  secondary: darken(#555e69, 15%),
-  meta: lighten(#555e69, 25%),
-  border: lighten(#555e69, 55%),
-  bg: lighten(#555e69, 60%),
-  accent: #1de2bc,
-  accent-blue: #10bcf9,
-  accent-violet: #9371e6,
-  accent-orange: #fc6e51,
-  text-dark-primary: #fff,
+// Swatch.
+$swatch: (
+  white: #fff,
+  dark-grey: #555e69,
+  aqua: #1de2bc,
+  blue: #343deb,
+  light-blue: #10bcf9,
+  light-purple: #9371e6,
+  red-orange: #fc6e51,
 );
 
-@import "imports/functions";
+:root {
+  // Palette.
+  $palette: (
+    primary: _swatch(dark-grey),
+    secondary: darken(_swatch(dark-grey), 15%),
+    meta: lighten(_swatch(dark-grey), 25%),
+    border: lighten(_swatch(dark-grey), 55%),
+    bg: lighten(_swatch(dark-grey), 60%),
+    accent: _swatch(aqua),
+    accent-shadow: rgba(_swatch(aqua), 0.2),
+    text-white: _swatch(white),
+  );
+  @include setPalette($palette);
+}
+
+@import "imports/palettes";
 @import "imports/reset";
 @import "imports/general";
 @import "imports/icons";
@@ -39,5 +54,4 @@ $palette: (
 @import "imports/posts-pages";
 @import "imports/sections";
 @import "imports/footer";
-@import "imports/palettes";
 @import "imports/banner";

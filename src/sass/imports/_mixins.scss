@@ -1,0 +1,16 @@
+/// Updates a specific palette CSS variables.
+/// @author Alex Youngblood
+/// @param {string} $name Color name.
+/// @param {string} $value Color Value.
+@mixin setColor($name, $value) {
+  --palette-#{$name}: #{$value};
+}
+
+/// Updates palette CSS variables.
+/// @author Alex Youngblood
+/// @param {map} $palette Updated Palette.
+@mixin setPalette($palette) {
+  @each $name, $value in $palette {
+    @include setColor($name, $value);
+  }
+}
