@@ -214,7 +214,7 @@
       &:active {
         background: _palette(accent);
         border-color: _palette(accent);
-        box-shadow: 0 0 1px 5px _palette(accent-shadow);
+        box-shadow: 0 0 5px _palette(accent);
         color: #fff;
       }
     }
