@@ -1,5 +1,5 @@
 ---
-title: Basic Rules For Walking In The Mountains
+title: SELinux Policy Distribution Manager (SPDM)
 excerpt: >-
   Hiking can sometimes involves bushwhacking and hiking is sometimes referred to
   as such. This specifically refers to difficult walking through dense forest,
