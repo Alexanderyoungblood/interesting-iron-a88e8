@@ -332,12 +332,12 @@ input[type="button"],
 input[type="reset"],
 .button {
   background: _palette(accent);
-  border: 1px solid _palette(accent);
+  border: 2px solid _palette(accent);
   border-radius: 15px;
   box-sizing: border-box;
   color: _palette(white);
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.075em;
   line-height: 1.2;
   padding: 0.75714em 35px;
@@ -351,10 +351,10 @@ input[type="reset"],
   &:focus,
   &:active {
     background: transparent;
-    border-color: _palette(accent);
-    box-shadow: 0 0 15px _palette(accent), 0 0 2px 1px _palette(accent);
+    box-shadow: 0 0 15px 2px _palette(accent),
+      inset 0 0 3px 1px _palette(accent);
+    font-weight: bold;
     color: _palette(accent);
-    outline: 0;
   }
 }
 
