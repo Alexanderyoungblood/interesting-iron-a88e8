@@ -314,7 +314,7 @@ models:
     urlPath: "/projects/{slug}"
     label: Projects
     layout: post
-    folder: posts
+    folder: projects
     fields:
       - type: string
         name: title
