@@ -18,7 +18,7 @@ export const query = graphql`
 
 export default class Projects extends React.Component {
     render() {
-        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/posts'), 'frontmatter.date', 'desc');
+        let display_projects = _.orderBy(getPages(this.props.pageContext.pages, '/projects'), 'frontmatter.date', 'desc');
         return (
             <Layout {...this.props}>
               <header className="screen-reader-text">
@@ -26,7 +26,7 @@ export default class Projects extends React.Component {
               </header>
               <div className="post-feed">
                 <div className="post-feed-inside">
-                  {_.map(display_posts, (post, post_idx) => (
+                  {_.map(display_projects, (post, post_idx) => (
                   <article key={post_idx} className="post post-card">
                     <div className="post-inside">
                       {_.get(post, 'frontmatter.thumb_img_path', null) && (
