@@ -311,8 +311,8 @@ models:
           - stackbit_page_meta
   post:
     type: page
-    urlPath: "/posts/{slug}"
-    label: Post
+    urlPath: "/projects/{slug}"
+    label: Projects
     layout: post
     folder: posts
     fields:
