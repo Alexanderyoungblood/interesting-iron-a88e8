@@ -21,8 +21,7 @@ sections:
         style: button
     title: Objective
   - title: Skills & Experience
-    section_id: lorem-ipsum
-    image_alt: lorem-ipsum
+    section_id: skills
     content: >
       I draw experience from my past employment at Oracle where I was a member
       of their Infrastructure as a Service team, the projects which my teammates
@@ -41,17 +40,17 @@ sections:
         url: projects/index.html
         style: button
 seo:
-  title: Stackbit Fresh Theme
-  description: The preview of the Fresh theme
+  title: AJYoungb Home
+  description: Alexander John Youngblood's personal website
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Stackbit Fresh Theme
+      value: AJYoungb
       keyName: property
     - name: 'og:description'
-      value: The preview of the Fresh theme
+      value: Alexander John Youngblood's personal website
       keyName: property
     - name: 'og:image'
       value: images/4.jpg
@@ -60,9 +59,9 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Stackbit Fresh Theme
+      value: AJYoungb
     - name: 'twitter:description'
-      value: The preview of the Fresh theme
+      value: Alexander John Youngblood's personal website
     - name: 'twitter:image'
       value: images/4.jpg
       relativeUrl: true
