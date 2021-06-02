@@ -20,25 +20,33 @@ $font: (
 // Swatch.
 $swatch: (
   white: #fff,
+  black: #000,
   dark-grey: #555e69,
   aqua: #1de2bc,
   blue: #343deb,
+  blue-haze: #6054ff,
+  blue-purple: #5f2eff,
   light-blue: #10bcf9,
   light-purple: #9371e6,
+  red: #ff3b52,
   red-orange: #fc6e51,
+  red-pink: #ff3b62,
 );
 
 :root {
   // Palette.
   $palette: (
     primary: _swatch(dark-grey),
-    secondary: darken(_swatch(dark-grey), 15%),
+    secondary: darken(_swatch(dark-grey), 25%),
     meta: lighten(_swatch(dark-grey), 25%),
+    shadow: lighten(_swatch(dark-grey), 35%),
     border: lighten(_swatch(dark-grey), 55%),
     bg: lighten(_swatch(dark-grey), 60%),
     accent: _swatch(aqua),
     accent-shadow: rgba(_swatch(aqua), 0.2),
+    clear: rgba(_swatch(white), 0),
     text-white: _swatch(white),
+    white: _swatch(white),
   );
   @include setPalette($palette);
 }

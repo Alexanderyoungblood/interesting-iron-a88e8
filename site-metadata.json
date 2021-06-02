@@ -1,6 +1,6 @@
 {
     "layout_style": "overflow",
-    "palette": "blue",
+    "palette": "haze",
     "header": {
         "title": "AJYoungb",
         "tagline": "Header Tagline",
@@ -32,29 +32,10 @@
                 "label": "Résumé",
                 "url": "/resume/",
                 "style": "link"
-            },
-            {
-                "label": "Contact",
-                "url": "/contact/",
-                "style": "link"
             }
         ],
         "has_social": true,
         "social_links": [
-            {
-                "label": "Twitter",
-                "url": "https://twitter.com/",
-                "style": "icon",
-                "icon_class": "twitter",
-                "new_window": true
-            },
-            {
-                "label": "Instagram",
-                "url": "https://www.instagram.com/",
-                "style": "icon",
-                "icon_class": "instagram",
-                "new_window": true
-            },
             {
                 "label": "GitHub",
                 "url": "https://github.com/",
@@ -70,16 +51,16 @@
                 "new_window": true
             },
             {
-                "label": "DEV",
-                "url": "https://dev.to/",
+                "label": "Email",
+                "url": "https://twitter.com/",
                 "style": "icon",
-                "icon_class": "dev",
+                "icon_class": "email",
                 "new_window": true
             }
         ]
     },
     "footer": {
-        "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=fresh&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>"
+        "content": "&copy 2021 Alexander John Youngblood"
     },
     "title": "Stackbit Fresh Theme",
     "domain": "https://interesting-iron-a88e8.netlify.app"

@@ -9,6 +9,7 @@ export default class SectionContent extends React.Component {
         let section = _.get(this.props, 'section', null);
         return (
             <section id={_.get(section, 'section_id', null)} className="block block-text">
+              <hr/>
               {_.get(section, 'title', null) && (
               <h2 className="block-title underline inner-sm">{_.get(section, 'title', null)}</h2>
               )}
@@ -20,11 +21,11 @@ export default class SectionContent extends React.Component {
               {_.get(section, 'content', null) && (
               <div className="block-content inner-sm">
                 {markdownify(_.get(section, 'content', null))}
-              </div>
-              )}
-              {_.get(section, 'actions', null) && (
-              <div className="block-buttons inner-sm">
-                <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
+                {_.get(section, 'actions', null) && (
+                  <div className="block-buttons inner-sm">
+                    <CtaButtons {...this.props} actions={_.get(section, 'actions', null)} />
+                  </div>
+                )}
               </div>
               )}
             </section>

@@ -12,6 +12,7 @@ export default class SectionPosts extends React.Component {
         let recent_posts = display_posts.slice(0, _.get(section, 'posts_number', null));
         return (
             <section id={_.get(section, 'section_id', null)} className="block block-posts">
+              <hr/>
               {_.get(section, 'title', null) && (
               <h2 className="block-title underline inner-sm">{_.get(section, 'title', null)}</h2>
               )}

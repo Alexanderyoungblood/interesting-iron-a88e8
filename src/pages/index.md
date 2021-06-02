@@ -9,7 +9,7 @@ sections:
       I'm a recent NC State grad with experience in IoT and DevOps practices. My
       other interests include CNC woodworking, and home automation involving
       computer vision. This is my website...
-  - section_id: about
+  - section_id: objective
     type: section_content
     content: >
       I'm currently interested in opportunities at organizations doing work with
@@ -32,19 +32,14 @@ sections:
       how they relate to my experience.
     actions: []
     type: section_content
-  - section_id: recent-posts
+  - section_id: relevant-projects
     type: section_posts
-    title: Recent Posts
+    title: Relevant Projects
     posts_number: 4
     actions:
-      - label: View Projects
+      - label: View All Projects
         url: projects/index.html
         style: button
-  - title: lorem-ipsum
-    section_id: lorem-ipsum
-    posts_number: 0
-    actions: []
-    type: section_posts
 seo:
   title: Stackbit Fresh Theme
   description: The preview of the Fresh theme

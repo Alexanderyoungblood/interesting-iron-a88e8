@@ -53,7 +53,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 -0.83333em 1.66667em;
+  margin: 0.5em -0.83333em -0.5em;
 }
 
 .post-card {
@@ -67,12 +67,12 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 1.66667em;
+  margin-bottom: 30px;
   width: 50%;
 
   .post-inside {
-    border: 1px solid _palette(border);
-    border-radius: 5px;
+    box-shadow: 0px 0px 15px _palette(shadow);
+    border-radius: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -163,7 +163,8 @@
   }
 }
 
-@media only screen and (min-width: 801px) and (max-width: 1000px), only screen and (max-width: 600px) {
+@media only screen and (min-width: 801px) and (max-width: 1000px),
+  only screen and (max-width: 600px) {
   .post-card {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;

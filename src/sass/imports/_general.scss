@@ -12,6 +12,10 @@ body {
   background: #fff;
   color: _palette(primary);
   line-height: 1.66667;
+  p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
 }
 
 a {
@@ -68,10 +72,6 @@ h6 {
   font-size: 0.88889em;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
-}
-
-p {
-  margin: 0 0 1.66667em;
 }
 
 address {
@@ -332,10 +332,10 @@ input[type="button"],
 input[type="reset"],
 .button {
   background: _palette(accent);
-  border: 2px solid _palette(accent);
-  border-radius: 30px;
+  border: 1px solid _palette(accent);
+  border-radius: 15px;
   box-sizing: border-box;
-  color: #fff;
+  color: _palette(white);
   display: inline-block;
   font-size: 14px;
   letter-spacing: 0.075em;
@@ -352,8 +352,8 @@ input[type="reset"],
   &:active {
     background: transparent;
     border-color: _palette(accent);
-    box-shadow: 0 0 1px 0.5em _palette(accent-shadow);
-    color: _palette(secondary);
+    box-shadow: 0 0 15px _palette(accent), 0 0 2px 1px _palette(accent);
+    color: _palette(accent);
     outline: 0;
   }
 }
@@ -424,20 +424,6 @@ img {
   padding: 0;
   position: absolute !important;
   width: 1px;
-}
-
-/* Heading underline */
-.underline {
-  position: relative;
-
-  &:after {
-    border-left: 30px solid _palette(accent);
-    box-shadow: inset 0 1px 0 0 _palette(border);
-    display: block;
-    content: "";
-    height: 3px;
-    margin-top: 1rem;
-  }
 }
 
 /* Clearing floats */

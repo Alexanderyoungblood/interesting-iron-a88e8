@@ -5,14 +5,8 @@
 .palette-blue {
   // Palette.
   $palette: (
-    primary: _swatch(dark-grey),
-    secondary: darken(_swatch(dark-grey), 15%),
-    meta: lighten(_swatch(dark-grey), 25%),
-    border: lighten(_swatch(dark-grey), 55%),
-    bg: lighten(_swatch(dark-grey), 60%),
     accent: _swatch(light-blue),
     accent-shadow: rgba(_swatch(light-blue), 0.2),
-    text-white: _swatch(white),
   );
   @include setPalette($palette);
 }
@@ -20,14 +14,8 @@
 .palette-violet {
   // Palette.
   $palette: (
-    primary: _swatch(dark-grey),
-    secondary: darken(_swatch(dark-grey), 15%),
-    meta: lighten(_swatch(dark-grey), 25%),
-    border: lighten(_swatch(dark-grey), 55%),
-    bg: lighten(_swatch(dark-grey), 60%),
     accent: _swatch(light-purple),
     accent-shadow: rgba(_swatch(light-purple), 0.2),
-    text-white: _swatch(white),
   );
   @include setPalette($palette);
 }
@@ -35,14 +23,35 @@
 .palette-orange {
   // Palette.
   $palette: (
-    primary: _swatch(dark-grey),
-    secondary: darken(_swatch(dark-grey), 15%),
-    meta: lighten(_swatch(dark-grey), 25%),
-    border: lighten(_swatch(dark-grey), 55%),
-    bg: lighten(_swatch(dark-grey), 60%),
     accent: _swatch(red-orange),
     accent-shadow: rgba(_swatch(red-orange), 0.2),
-    text-white: _swatch(white),
+  );
+  @include setPalette($palette);
+}
+
+.palette-red {
+  // Palette.
+  $palette: (
+    accent: _swatch(red),
+    accent-shadow: rgba(_swatch(red), 0.2),
+  );
+  @include setPalette($palette);
+}
+
+.palette-purple {
+  // Palette.
+  $palette: (
+    accent: _swatch(blue-purple),
+    accent-shadow: rgba(_swatch(blue-purple), 0.2),
+  );
+  @include setPalette($palette);
+}
+
+.palette-haze {
+  // Palette.
+  $palette: (
+    accent: _swatch(blue-haze),
+    accent-shadow: rgba(_swatch(blue-haze), 0.2),
   );
   @include setPalette($palette);
 }

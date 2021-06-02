@@ -2,18 +2,30 @@
  * Sections
  */
 .block {
-  margin-bottom: 5em;
+  margin-bottom: 1em;
+  hr {
+    background-color: _palette(primary);
+    box-shadow: 0px 0px 5px _palette(meta), 0px 0px 0px 0.5px _palette(meta);
+    margin-left: -1.5vw;
+    margin-right: -1.5vw;
+    height: 1px;
+  }
 }
 
 .block-title {
-  &.underline {
-    color: _palette(secondary);
-    font-size: 1em;
-    letter-spacing: 0.11111em;
-    margin-bottom: 1.66667rem;
-    margin-top: 0;
-    text-transform: uppercase;
-  }
+  page-break-before: always;
+  color: _palette(secondary);
+  font-size: 1em;
+  letter-spacing: 0.11111em;
+  margin-bottom: 0.66667rem;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.block-content {
+  box-shadow: 0px 0px 15px _palette(shadow);
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
 }
 
 .block-image {
@@ -35,41 +47,60 @@
   flex-wrap: wrap;
 
   a {
-    margin-bottom: 1em;
-    margin-right: 15px;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
   }
 }
 
 /* Hero section */
 .block-hero {
-  margin-bottom: 3.33333em;
-
   .block-title {
+    letter-spacing: initial;
     font-size: 2.66667em;
-    margin-bottom: 1rem;
-    margin-top: 0;
+    text-transform: initial;
   }
 
   .block-content {
     font-size: 1.33333em;
     line-height: 1.5;
+    box-shadow: initial;
+    border-radius: initial;
+    padding: initial;
   }
 }
 
+// @media only screen and (min-width: 801px) and (min-height: 681px) {
+//   .block {
+//     hr {
+//       margin: 0.75em calc(270px + 30vw - 50vw) 0.75em calc(270px + 30vw - 50vw);
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 1001px) and (min-height: 681px) {
+//   .block {
+//     hr {
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 800px), (max-height: 680px) {
+//   .block {
+//     hr {
+//       margin: 0.75em calc(270px - 50vw) 0.75em calc(270px - 50vw);
+//     }
+//   }
+// }
+
 @media only screen and (max-width: 1000px) {
-  .block {
-    margin-bottom: 3.33333em;
-  }
-
   .block-hero {
-    margin-bottom: 2.5em;
-
     .block-title {
-      font-size: 2.22222em;
+      font-size: 2.66667em;
     }
 
     .block-content {
-      font-size: 1.22222em;
+      font-size: 1.33333em;
     }
   }
 }

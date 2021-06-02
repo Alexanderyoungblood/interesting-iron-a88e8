@@ -2,25 +2,29 @@
   display: flex;
   width: 100%;
   svg {
+    height: 50px;
     overflow: visible;
-    fill: _palette(text-white);
     .hide {
       font-weight: bold;
       fill-opacity: 0;
     }
     .show {
       font-weight: bold;
+      fill: _palette(text-white);
     }
     .reveal {
+      fill: _palette(meta);
       font-weight: normal;
     }
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 801px) and (min-height: 681px) {
   .site-title-card {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
     svg {
-      height: 50px;
+      height: initial;
     }
   }
 }

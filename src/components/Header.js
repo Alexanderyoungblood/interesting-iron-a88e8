@@ -14,11 +14,13 @@ export default class Header extends React.Component {
                   <div className="site-branding">
                     {_.get(this.props, 'pageContext.site.siteMetadata.header.profile_img', null) && (
                     <p className="profile">
-                      <Link to={withPrefix('/')}><img src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.profile_img', null))}
-                          className="avatar" alt={_.get(this.props, 'pageContext.site.siteMetadata.header.profile_img_alt', null)} /></Link>
+                      <Link to={withPrefix('/')}>
+                        <img src={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.header.profile_img', null))}
+                        className="avatar" alt={_.get(this.props, 'pageContext.site.siteMetadata.header.profile_img_alt', null)} />
+                        <TitleCard {...this.props} />
+                      </Link>
                     </p>
                     )}
-                    <TitleCard {...this.props} />
                     <div className="site-identity">
                       {/* <p className="site-title"><Link to={withPrefix('/')}>{_.get(this.props, 'pageContext.site.siteMetadata.header.title', null)}</Link></p> */}
                       {/* {_.get(this.props, 'pageContext.site.siteMetadata.header.tagline', null) && (
