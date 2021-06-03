@@ -269,9 +269,9 @@ models:
         label: Seo
   feed:
     type: page
-    urlPath: /projects
+    urlPath: /feed
     label: Feed
-    layout: projects
+    layout: feed
     file: projects/index.md
     hideContent: true
     singleInstance: true
