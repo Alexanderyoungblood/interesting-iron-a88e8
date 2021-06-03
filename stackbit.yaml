@@ -317,10 +317,10 @@ models:
         label: Seo
   post:
     type: page
-    urlPath: /projects/{slug}
+    urlPath: /feed/{slug}
     label: Post
     layout: post
-    folder: projects
+    folder: feed
     fields:
       - type: string
         name: title
