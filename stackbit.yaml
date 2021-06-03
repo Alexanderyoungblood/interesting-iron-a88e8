@@ -264,12 +264,12 @@ models:
         name: seo
         models:
           - stackbit_page_meta
-  projects:
+  posts:
     type: page
-    urlPath: /projects
-    label: Projects
-    layout: projects
-    file: projects/index.md
+    urlPath: /posts
+    label:
+    layout: posts
+    file: posts/index.md
     hideContent: true
     singleInstance: true
     fields:
@@ -305,16 +305,20 @@ models:
         name: img_alt
         label: Image Alt Text
         description: The alt text of the image.
+      - type: PDF
+        name: img_path
+        label: Image
+        description: The image shown below the page title and subtitle.
       - type: model
         name: seo
         models:
           - stackbit_page_meta
   post:
     type: page
-    urlPath: "/projects/{slug}"
-    label: Projects
+    urlPath: "/posts/{slug}"
+    label: Post
     layout: post
-    folder: projects
+    folder: posts
     fields:
       - type: string
         name: title
@@ -331,12 +335,12 @@ models:
         required: true
       - type: image
         name: thumb_img_path
-        label: Image (projects)
-        description: The image shown in the projects section.
+        label: Image (thumbnail)
+        description: Thumbnail image in the post card.
       - type: string
         name: thumb_img_alt
-        label: Image alt text (projects section)
-        description: The alt text of the projects section image.
+        label: Image alt text (thumbnail)
+        description: The alt text of the thumbnail image in the post card.
       - type: image
         name: content_img_path
         label: Image (single post)

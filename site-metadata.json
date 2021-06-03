@@ -24,7 +24,7 @@
                 "type": "action"
             },
             {
-                "url": "/projects/",
+                "url": "/posts/",
                 "style": "link",
                 "label": "Projects"
             },
