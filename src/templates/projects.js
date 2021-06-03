@@ -26,7 +26,7 @@ export default class Feed extends React.Component {
               </header>
               <div className="post-feed">
                 <div className="post-feed-inside">
-                  {_.map(display_projects, (post, post_idx) => (
+                  {_.map(display_feed, (post, post_idx) => (
                   <article key={post_idx} className="post post-card">
                     <div className="post-inside">
                       {_.get(post, 'frontmatter.thumb_img_path', null) && (
