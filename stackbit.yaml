@@ -267,7 +267,7 @@ models:
         models:
           - stackbit_page_meta
         label: Seo
-  projects:
+  projects-page:
     type: page
     urlPath: /projects
     label: Projects
