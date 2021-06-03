@@ -338,7 +338,7 @@ models:
       - type: image
         name: thumb_img_path
         label: Image (post)
-        description: Thumbnail image for the post.
+        description: Thumbnail image for the post card.
       - type: string
         name: thumb_img_alt
         label: Image alt text (post)
