@@ -1,14 +1,14 @@
 ---
 title: Projects & Guides
 seo:
-  title: Projects
+  title: Projects & Guides
   description: This is the projects page
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Projects
+      value: Projects & Guides
       keyName: property
     - name: 'og:description'
       value: This is the projects page
