@@ -315,6 +315,10 @@ models:
         models:
           - stackbit_page_meta
         label: Seo
+      - name: PDF
+        type: file
+        readOnly: true
+        description: The optional PDF content for the page
   post:
     type: page
     urlPath: /feed/{slug}
