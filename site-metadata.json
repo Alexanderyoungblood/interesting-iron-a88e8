@@ -26,6 +26,9 @@
                 "url": "/feed/",
                 "style": "link",
                 "label": "Projects"
+                "new_window": false,
+                "no_follow": false,
+                "type": "action"
             },
             {
                 "label": "Résumé",
