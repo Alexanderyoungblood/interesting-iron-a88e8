@@ -319,6 +319,7 @@ models:
         type: file
         readOnly: true
         description: The optional PDF content for the page
+        label: pdf
   post:
     type: page
     urlPath: /feed/{slug}
