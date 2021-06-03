@@ -16,7 +16,7 @@ export const query = graphql`
   }
 `;
 
-export default class Projects extends React.Component {
+export default class Feed extends React.Component {
     render() {
         let display_projects = _.orderBy(getPages(this.props.pageContext.pages, '/projects'), 'frontmatter.date', 'desc');
         return (
