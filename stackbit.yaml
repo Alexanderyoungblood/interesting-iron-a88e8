@@ -337,7 +337,7 @@ models:
         required: true
       - type: image
         name: thumb_img_path
-        label: Image (projects)
+        label: Image (post)
         description: Thumbnail image for the post.
       - type: string
         name: thumb_img_alt
