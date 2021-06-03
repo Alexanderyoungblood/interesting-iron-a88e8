@@ -24,7 +24,7 @@
                 "type": "action"
             },
             {
-                "url": "/projects/",
+                "url": "/feed/",
                 "style": "link",
                 "label": "Projects"
             },
