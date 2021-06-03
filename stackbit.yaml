@@ -318,7 +318,7 @@ models:
   post:
     type: page
     urlPath: /projects/{slug}
-    label: Projects
+    label: Post
     layout: post
     folder: projects
     fields:
