@@ -31,7 +31,7 @@ sections:
       how they relate to my experience.
     actions: []
     type: section_content
-  - section_id: projects-feed
+  - section_id: feed
     type: section_posts
     title: Projects & Guides
     posts_number: 4
