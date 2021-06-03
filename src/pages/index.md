@@ -33,10 +33,10 @@ sections:
     type: section_content
   - section_id: relevant-projects
     type: section_posts
-    title: Relevant Projects
+    title: Projects & Guides
     posts_number: 4
     actions:
-      - label: View All Projects
+      - label: View All Posts
         url: projects/index.html
         style: button
 seo:
