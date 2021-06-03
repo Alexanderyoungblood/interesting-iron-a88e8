@@ -342,7 +342,7 @@ models:
       - type: string
         name: thumb_img_alt
         label: Image alt text (post)
-        description: The alt text of the thumbnail image for the post.
+        description: The alt text of the thumbnail image for the post card.
       - type: image
         name: content_img_path
         label: Image (single post)
@@ -354,7 +354,7 @@ models:
       - type: string
         name: excerpt
         label: Excerpt
-        description: The excerpt of the post displayed in the projects section.
+        description: The excerpt of the post displayed in the post card.
       - type: model
         name: seo
         models:
