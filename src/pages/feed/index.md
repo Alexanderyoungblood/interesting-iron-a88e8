@@ -20,7 +20,7 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Projects
+      value: Projects & Guides
     - name: 'twitter:description'
       value: This is the projects page
     - name: 'twitter:image'
