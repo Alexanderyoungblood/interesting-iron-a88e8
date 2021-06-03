@@ -272,7 +272,7 @@ models:
     urlPath: /feed
     label: Feed
     layout: feed
-    file: projects/index.md
+    file: feed/index.md
     hideContent: true
     singleInstance: true
     fields:
