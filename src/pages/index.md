@@ -37,7 +37,7 @@ sections:
     posts_number: 4
     actions:
       - label: View All Posts
-        url: projects/index.html
+        url: feed/index.html
         style: button
 seo:
   title: AJYoungb Home
