@@ -342,7 +342,7 @@ models:
       - type: string
         name: thumb_img_alt
         label: Image alt text (projects section)
-        description: The alt text of the projects section image.
+        description: The alt text of the thumbnail image for the post.
       - type: image
         name: content_img_path
         label: Image (single post)
