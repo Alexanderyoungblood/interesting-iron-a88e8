@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Projects & Guides
 seo:
   title: Projects
   description: This is the projects page
