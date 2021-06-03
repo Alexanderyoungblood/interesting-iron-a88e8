@@ -270,7 +270,7 @@ models:
   feed:
     type: page
     urlPath: /projects
-    label: Projects
+    label: Feed
     layout: projects
     file: projects/index.md
     hideContent: true
