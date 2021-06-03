@@ -315,7 +315,7 @@ models:
         models:
           - stackbit_page_meta
         label: Seo
-      - name: PDF
+      - name: pdf_path
         type: file
         readOnly: true
         description: The optional PDF content for the page
