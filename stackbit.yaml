@@ -104,7 +104,7 @@ sourceMapping:
       file: config.yml
       fieldPath: params.footer.links[0].style
 logicFields:
-  - section_posts.posts_number
+  - section_feed.posts_number
 models:
   config:
     type: config
@@ -261,7 +261,8 @@ models:
             - section_content
             - section_form
             - section_hero
-            - section_posts
+            - section_feed
+            - section_pdf
       - type: model
         name: seo
         models:
@@ -281,6 +282,11 @@ models:
         label: Title
         description: The title of the page.
         required: true
+      - type: string
+        name: posts_url_prefix
+        label: Posts Prefix
+        description: The url prefix of all posts in the feed.
+        required: true
       - type: model
         name: seo
         models:
@@ -291,7 +297,7 @@ models:
     label: Page
     layout: page
     exclude:
-      - posts/**
+      - feed/**
     fields:
       - type: string
         name: title
@@ -440,9 +446,39 @@ models:
           models:
             - action
     labelField: title
-  section_posts:
+  section_pdf:
     type: object
-    label: Posts Section
+    label: PDF Section
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the pdf.
+      - type: string
+        name: section_id
+        label: Element ID
+        description: >-
+          A unique identifier that can be used when linking to this section.
+          Must not contain whitespace.
+      - type: string
+        name: pdf-url
+        label: PDF URL
+        description: The URL to the PDF document of the section.
+      - type: markdown
+        name: annotation
+        label: PDF Annotation
+        description: The annotation for the PDF document.
+      - type: list
+        name: actions
+        label: Action Buttons
+        items:
+          type: model
+          models:
+            - action
+    labelField: title
+  section_feed:
+    type: object
+    label: Feed Section
     fields:
       - type: string
         name: title
@@ -457,6 +493,10 @@ models:
       - type: number
         name: posts_number
         label: Number of posts to display
+        required: true
+      - type: string
+        name: posts_url_prefix
+        label: The url prefix from which to query posts
         required: true
       - type: list
         name: actions
@@ -520,7 +560,7 @@ models:
         name: url
         label: URL
         required: true
-        default: '#'
+        default: "#"
       - type: enum
         name: style
         label: Style
@@ -554,6 +594,10 @@ models:
         label: No follow
         default: false
         description: Add rel="nofollow" attribute to the link
+      - type: boolean
+        name: download
+        label: Download linked file
+        default: false
   form_field:
     type: object
     label: Form Field
@@ -603,12 +647,12 @@ models:
         name: title
         label: Title
         description: The page title that goes into the <title> tag
-        default: ''
+        default: ""
       - type: string
         name: description
         label: Description
         description: The page description that goes into the <meta name="description"> tag
-        default: ''
+        default: ""
       - type: list
         name: robots
         label: Robots
@@ -636,11 +680,11 @@ models:
           fields:
             - type: string
               name: name
-              default: ''
+              default: ""
               label: Name
             - type: string
               name: value
-              default: ''
+              default: ""
               label: Value
             - type: string
               name: keyName

@@ -1,11 +1,11 @@
 ---
-title: About Me
-subtitle: This is a short page about me and my work.
+title: Resume
+subtitle: Alexander John Youngblood Resume - 2021.
 # img_path: images/about.jpg
 img_alt: Portrait of a man with beard and mustache
 seo:
-  title: About Me
-  description: This is the about me page
+  title: Resume
+  description: This is my resume page
   extra:
     - name: 'og:type'
       value: website
@@ -14,12 +14,12 @@ seo:
       value: About Me
       keyName: property
     - name: 'og:description'
-      value: This is the about me page
+      value: This is my resume page
       keyName: property
-    - name: 'og:image'
-      value: images/profile-image.jpg
-      keyName: property
-      relativeUrl: true
+    # - name: 'og:image'
+    #   value: images/about.jpg
+    #   keyName: property
+    #   relativeUrl: true
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'

@@ -32,13 +32,23 @@ sections:
     actions: []
     type: section_content
   - section_id: feed
-    type: section_posts
+    type: section_feed
     title: Projects & Guides
     posts_number: 4
+    posts_url_prefix: /feed/
     actions:
       - label: View All Posts
         url: /feed
         style: button
+  - section_id: resume
+    type: section_pdf
+    title: Resume
+    pdf-url: /documents/resume-default.pdf
+    actions:
+      - label: Download
+        url: /documents/resume-default.pdf
+        style: button
+        download: true
 seo:
   title: AJYoungb Home
   description: Alexander John Youngblood's personal website

@@ -6,9 +6,9 @@ excerpt: >-
   undergrowth, or bushes, where forward progress requires pushing vegetation
   aside.
 date: '2018-01-09'
-thumb_img_path: images/SPDM Logo V2.png
+thumb_img_path: images/spdm-logo.png
 thumb_img_alt: SPDM Logo
-content_img_path: images/SPDM Logo V2.png
+content_img_path: images/spdm-logo.png
 content_img_alt: SPDM Logo
 seo:
   title: Basic Rules For Walking In The Mountains

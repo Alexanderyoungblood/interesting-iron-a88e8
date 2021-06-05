@@ -1,5 +1,6 @@
 ---
 title: Projects & Guides
+posts_url_prefix: /feed
 seo:
   title: Projects & Guides
   description: This is the projects page

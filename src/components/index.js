@@ -4,9 +4,10 @@ import FormField from './FormField';
 import Header from './Header';
 import Icon from './Icon';
 import SectionContent from './SectionContent';
+import SectionPdf from './SectionPdf';
 import SectionForm from './SectionForm';
 import SectionHero from './SectionHero';
-import SectionPosts from './SectionPosts';
+import SectionFeed from './SectionFeed';
 import Layout from './Layout';
 
 export {
@@ -16,9 +17,10 @@ export {
     Header,
     Icon,
     SectionContent,
+    SectionPdf,
     SectionForm,
     SectionHero,
-    SectionPosts,
+    SectionFeed,
     Layout
 };
 
@@ -29,8 +31,9 @@ export default {
     Header,
     Icon,
     SectionContent,
+    SectionPdf,
     SectionForm,
     SectionHero,
-    SectionPosts,
+    SectionFeed,
     Layout
 };

@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 import {Link, withPrefix, classNames} from '../utils';
 
-export default class CtaButtons extends React.Component {
+export default class PopoverButtons extends React.Component {
     render() {
         let actions = _.get(this.props, 'actions', null);
         return (
@@ -11,7 +11,6 @@ export default class CtaButtons extends React.Component {
               <Link key={action_idx} to={withPrefix(_.get(action, 'url', null))}
                 {...(_.get(action, 'new_window', null) ? ({target: '_blank'}) : null)}
                 {...((_.get(action, 'new_window', null) || _.get(action, 'no_follow', null)) ? ({rel: (_.get(action, 'new_window', null) ? ('noopener ') : '') + (_.get(action, 'no_follow', null) ? ('nofollow') : '')}) : null)}
-                {...(_.get(action, 'download', null) ? ({download: ''}) : null)}
                 className={classNames({'button': _.get(action, 'style', null) === 'button'})}>{_.get(action, 'label', null)}</Link>
             ))
         );
