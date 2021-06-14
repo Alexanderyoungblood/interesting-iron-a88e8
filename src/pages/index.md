@@ -30,9 +30,7 @@ sections:
       that I've gained along the way. Feel free to hover over any of them to see
       how they relate to my experience.
 
-
       *   dfads
-
 
       *   asdfsdfa
     actions: []
